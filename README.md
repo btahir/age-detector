@@ -7,6 +7,8 @@ I used the IMDB-Wiki Dastbase for my data: https://data.vision.ee.ethz.ch/cvl/rr
 
 Specifically, I used the Faces Only data from Wikipedia in that dataset which is around 1 GB. I trained this on a resnet-50 model pre-trained on Imagenet.
 
+Only images with age labels from 10-120 were selected so the model will not probably work well for photos of kids younger than 10 or...really really old people.
+
 # Data Preparation
 
 After downloading the data, you have to use the filenames to generate ages. The file names come in the fromat of the date of birth of the person in the picture and the year the photo was taken. Assumiing a mid year date of 7/1, we can extrapolate th age of the person at the time the photo was taken.

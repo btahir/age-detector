@@ -17,6 +17,8 @@ There is no separate file for labels but rather they are within the filenames of
 
 Another snippet of python code in the notebook will derive the age from these two dates to get the labels. To keep it simple for now, I selected only images from ages between 10–120. This means the model will not work for really young kids…or really really old people.
 
+![alt text](https://github.com/btahir/age-detector/blob/master/data_batch.jpg)
+
 # Model Training
 
 I used a Resnet-50 pretrained on Imagenet for this project.

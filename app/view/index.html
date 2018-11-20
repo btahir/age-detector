@@ -1,0 +1,42 @@
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='../static/style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+        <script src='../static/client.js'></script>
+    </head>
+    <body>
+        <div>
+            <div class='center'>
+                <div class='title'>AGE PREDICTOR</div>
+                <div class='description'>Predicting Age Using Artifical Intelligence</div>
+                <div class='content'>
+                    <div class='no-display'>
+                        <input id='file-input'
+                            class='no-display'
+                            type='file'
+                            name='file'
+                            accept='image/*'
+                            onchange='showPicked(this)'>
+                    </div>
+                    <button class='choose-file-button' type='button' onclick='showPicker()'>UPLOAD IMAGE</button>
+                    <div class='upload-label'>
+                        <label id='upload-label'>No File Chosen</label>
+                    </div>
+                    <div>
+                        <img id='image-picked' class='no-display' alt='Chosen Image' height='250'>
+                    </div>
+                    <div class='analyze'>
+                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Run Age Analysis</button>
+                    </div>
+                    <div class='result-label'>
+                        <label id='result-label'></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

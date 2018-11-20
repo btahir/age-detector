@@ -1,7 +1,8 @@
 # Age Predictor Application
-Detecting A Person's Age In A Photo 
 
-This project leverages Deep Learning to predict a person's age in a photo. I used the fastai library for Deep Learning: https://github.com/fastai/fastai
+This project leverages Deep Learning to predict a person's age in a photo.
+
+I used the fastai library for Deep Learning: https://github.com/fastai/fastai
 
 I used the IMDB-Wiki Dastbase for my data: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
 
@@ -11,11 +12,11 @@ Specifically, I used the Faces Only data from Wikipedia in that dataset which is
 
 The Jupyter notebook has all the steps required to prep the data and generate labels.
 
-Once downloaded and untarred, the data is divided into subsets and stored in folders numbered 1–99. A python snippet in the notebook will loop through the directories and move all the files into one folder where the model could consume it.
+Once downloaded and untarred, the data is divided into subsets and stored in folders numbered 01–99. A python snippet in the notebook will loop through the directories and move all the files into one folder where the model could consume it.
 
-There is no separate file for labels but rather they are within the filenames of the images themselves. The images in the dataset had filenames that included the date of birth of the person and the year the picture was taken. Using these (and assuming a mid-year date of 7/1 for when the photo was taken) we can come up with a good estimate of the age of the person in the photo when it was taken.
+There is no separate file for labels but rather they are within the filenames of the images themselves. The images in the dataset have filenames that include the date of birth of the person and the year the picture was taken. Using these, and assuming a mid-year date of 7/1 for when the photo was taken, we can come up with a good estimate of the age of the person in the photo when it was taken.
 
-Another snippet of python code in the notebook will derive the age from these two dates to get the labels. To keep it simple for now, I selected only images from ages between 10–120. This means the model will not work for really young kids…or really really old people.
+Another snippet of python code in the notebook will derive the age from these two dates to get the labels. To keep it simple for now, I selected only images from ages between 10–120. This means the model will not work for really young kids…or really really old people. The final data looks like this:
 
 ![alt text](https://github.com/btahir/age-detector/blob/master/data_batch.jpg)
 
@@ -48,7 +49,7 @@ You can check out a live version of the app here: https://age-predictor.now.sh/
   month = {December},
 }
 
-
+Check out Fastai if you want to get into Deep Learning. It's awesome: https://www.fast.ai/
 
 
 

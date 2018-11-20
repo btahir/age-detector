@@ -21,7 +21,7 @@ I used a Resnet-50 pretrained on Imagenet for this project.
 
 You can check out a live version of the app here: https://age-predictor.now.sh/
 
-
+![alt text](https://github.com/btahir/age-detector/blob/master/example-photo.jpg)
 
 
 ### Citations

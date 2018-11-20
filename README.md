@@ -7,13 +7,15 @@ I used the IMDB-Wiki Dastbase for my data: https://data.vision.ee.ethz.ch/cvl/rr
 
 Specifically, I used the Faces Only data from Wikipedia in that dataset which is around 1 GB. I trained this on a resnet-50 model pre-trained on Imagenet.
 
-Only images with age labels from 10-120 were selected so the model will not probably work well for photos of kids younger than 10 or...really really old people.
-
 # Data Preparation
 
-After downloading the data, you have to use the filenames to generate ages. The file names come in the fromat of the date of birth of the person in the picture and the year the photo was taken. Assumiing a mid year date of 7/1, we can extrapolate th age of the person at the time the photo was taken.
+The Jupyter notebook has all the steps required to prep the data and generate labels.
 
-The Jupyter notebook has all the steps required to prep the data and genrate these labels.
+Once downloaded and untarred, the data is divided into subsets and stored in folders numbered 1–99. A python snippet in the notebook will loop through the directories and move all the files into one folder where the model could consume it.
+
+There is no separate file for labels but rather they are within the filenames of the images themselves. The images in the dataset had filenames that included the date of birth of the person and the year the picture was taken. Using these (and assuming a mid-year date of 7/1 for when the photo was taken) we can come up with a good estimate of the age of the person in the photo when it was taken.
+
+Another snippet of python code in the notebook will derive the age from these two dates to get the labels. To keep it simple for now, I selected only images from ages between 10–120. This means the model will not work for really young kids…or really really old people.
 
 # Model Training
 

@@ -2,6 +2,8 @@
 
 This project leverages Deep Learning to predict a person's age in a photo.
 
+Here is the live version of the App: https://age-predictor.now.sh/
+
 I used the fastai library for Deep Learning: https://github.com/fastai/fastai
 
 I used the IMDB-Wiki Dastbase for my data: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/

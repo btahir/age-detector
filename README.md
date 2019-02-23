@@ -6,7 +6,7 @@ Here is the live version of the App: https://age-predictor.now.sh/
 
 I used the fastai library for Deep Learning: https://github.com/fastai/fastai
 
-I used the IMDB-Wiki Dastbase for my data: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
+I used the IMDB-Wiki Database for my data: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
 
 Specifically, I used the Faces Only data from Wikipedia in that dataset which is around 1 GB. I trained this on a resnet-50 model pre-trained on Imagenet.
 
